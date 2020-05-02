@@ -49,6 +49,7 @@ export const Prevention = () => {
                           <li>Wash your hands</li>
                           <li>Frequent self-isolation</li>
                           <li>Frequent waterintake</li>
+                          <li>Social distance</li>
                         </ul>
                       </div>
                     </div>
@@ -66,7 +67,7 @@ export const Prevention = () => {
                       </div>
                       <div className="lower_box">
                         <ul>
-                          <li>Social distance</li>
+                         
                           <li>Avoid animals</li>
                           <li>Don't touch your face</li>
                           <li>Avoid handshaking</li>

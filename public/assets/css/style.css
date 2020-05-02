@@ -2205,64 +2205,51 @@
 	 -o-transition: all .6s ease-in-out;
 	 transition: all .6s ease-in-out;
  }
+
+ .grid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+ }	 
+	 
+
  
  .pin_marker_outer.type_one .pin .pin_box {
-	 position: absolute;
-	 top: -165px;
-	 left: -91px;
-	 right: 0;
-	 margin: 0;
-	 width: 200px;
-	 padding: 10px;
-	 border-radius: 10px;
-	 -webkit-transform: scaleX(0);
-	 -ms-transform: scaleX(0);
-	 transform: scaleX(0);
-	 background-color: rgba(9, 17, 42);
-	 margin-top: 0px;
-	 
-	 -webkit-transition: all .6s ease-in-out;
-	 -moz-transition: all .6s ease-in-out;
-	 -ms-transition: all .6s ease-in-out;
-	 -o-transition: all .6s ease-in-out;
-	 transition: all .6s ease-in-out;
- }
+	position: absolute;
+	top: -163px;
+	left: -90px;
+	right: 0;
+	margin: auto;
+	width: 200px;
+   
+	padding: 20px;
+	border-radius: 10px;
+	-webkit-transform: scaleX(0);
+	-ms-transform: scaleX(0);
+	transform: scaleX(0);
+	background-color: rgba(105, 189, 189, 0.9);
+	margin-top: 0px;
+	opacity: 0;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+}
 
- /* new */
- .imag_box {
-	width:250px;
-	max-height: 60px !important;
-	padding-bottom: 0;
-	margin-top: 0;
-	margin-bottom:60px;
+.pin_marker_outer.type_one .pin .pin_box:before {
+	position: absolute;
+	content: '';
+	bottom: -38px;
+	margin: 0 auto;
+	left: 0;
+	width: 20px;
+	right: 0;
+	border-top: 24px solid rgba(105, 189, 189, 0.9);
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
 
-	
-
-  }
-  .imag_box img {
-	  width: 168px !important;
-	  position: center;
-	  
-  }
-
- 
-
-
- 
- /* .pin_marker_outer.type_one .pin .pin_box:before {
-	 position: absolute;
-	 content: '';
-	 bottom: -39px;
-	 margin: 0 auto;
-	 left: 0;
-	 width: 20px;
-	 right: 0;
-	 border-top: 24px solid rgba(9, 17, 42);
-	 border-bottom: 15px solid transparent;
-	 border-left: 15px solid transparent;
-	 border-right: 15px solid transparent;
- }
-  */
  .pin_marker_outer.type_one .pin:hover .pin_box {
 	 opacity: 1;
 	 z-index: 99;
@@ -2273,6 +2260,7 @@
  
  .pin_marker_outer.type_one .pin .pin_box h2 {
 	padding-bottom: 0x;
+	border-bottom: 2px solid #fff;
 	font-size: 18px;
 	margin-bottom: 0;
 	color: #ffffff;
@@ -8390,6 +8378,8 @@ color: #274782;
 		 margin: 0;
 		 padding:0;
 	 }
+
+	 
 
 	 /* img */
 	 .imag_box {

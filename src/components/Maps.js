@@ -8,7 +8,7 @@ export default function Maps(props)  {
   const [viewport, setViewport ] = useState({
     latitude:0,
     longitude:0,
-    zoom:1.9,
+    zoom:3,
     center: [0, 20],
     width: "100vw",
     height:"100vh",
@@ -42,32 +42,34 @@ useEffect(()=>{
         <div className="pin">
           <div className="pin_box">
             <h2> {data.country} </h2>
-            <div className="imag_box">
-              <img  src={data.countryInfo.flag} className="img-fluid" alt="" />
-            </div>  
-            <div className="row">
-              <div className="col-md-8">
-                <p>Confirmed Cases: </p>
-              </div>
-              <div className="col-md-4">
-    <p>{data.cases}</p></div>
-            </div>
            
-            <div className="row">
-              <div className="col-md-8">
-                <p>Deaths: </p>
-              </div>
-              <div className="col-md-4">
-    <p>{data.deaths}</p></div>
-            </div>
-           
-            <div className="row">
-              <div className="col-md-8">
-                <p>Recovered: </p>
-              </div>
-              <div className="col-md-4">
-    <p>{data.recovered}</p></div>
-            </div>
+            <div className="grid">
+                                   
+                                   <div>
+                                      <p>Confirmed Cases:</p>
+                                   </div>
+                                   <div>
+    <p>{data.cases}</p>
+                                   </div>
+                                   
+                                   <div>
+                                      <p>Recovered:</p>
+                                   </div>
+                                   <div>
+    <p>{data.recovered}</p>
+                                   </div>
+                                   <div>
+                                      <p>Deaths:</p>
+                                   </div>
+                                   <div>
+    <p>{data.deaths}</p>
+                                   </div>
+                              
+                                 
+                             
+                                
+                             </div>
+
           </div>
         </div>
       </div> 
