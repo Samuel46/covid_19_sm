@@ -22,7 +22,7 @@ return (
       <Header/>
       <Stat data= {data}/>
       <Maps/>
-      
+      {/* <Overview/> */}
       <Symtoms/>
       <Footer/>
     </div>

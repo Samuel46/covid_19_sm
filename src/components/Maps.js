@@ -15,7 +15,7 @@ export default function Maps(props)  {
   })
   
 
-  const [results, setResults] = useState([])
+const [results, setResults] = useState([])
  
 useEffect(()=>{
    axios
