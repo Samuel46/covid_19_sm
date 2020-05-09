@@ -1,10 +1,10 @@
 import React,{ useEffect, useState } from 'react';
-
+import CountUp from "react-countup";
 import ReactMapGL, {Marker} from 'react-map-gl'
 import axios from 'axios'
 const MAPBOX_TOKEN = 'pk.eyJ1Ijoic2FtdWVsNDYiLCJhIjoiY2s5ZDI4c25nMDRmaTNucGxyeGwxbDFjeCJ9.iVfBfcZKo8BlH_RCF87yzQ'; // Set your mapbox token here
 
-export default function Maps(props)  {
+export default function Maps()  {
   const [viewport, setViewport ] = useState({
     latitude:0,
     longitude:0,
@@ -26,12 +26,12 @@ useEffect(()=>{
       .catch(err => {
          console.log(err);
       })
-})
+}, [])
 
   const countriesLocation = results.map((data, i) => {
     return (
       <Marker
-       key={data.countryInfo._id}
+       key={i}
        latitude={data.countryInfo.lat}
        longitude={data.countryInfo.long}
       
@@ -49,20 +49,39 @@ useEffect(()=>{
                                       <p>Confirmed Cases:</p>
                                    </div>
                                    <div>
-    <p>{data.cases}</p>
+                          
+                          <p>
+                            <CountUp
+                              start={0}
+                              end={data.cases}
+                              duration={3}
+                              separator=","
+                            /></p>
                                    </div>
                                    
                                    <div>
                                       <p>Recovered:</p>
                                    </div>
                                    <div>
-    <p>{data.recovered}</p>
+                                   <p>
+                            <CountUp
+                              start={0}
+                              end={data.recovered}
+                              duration={3}
+                              separator=","
+                            /></p>
                                    </div>
                                    <div>
                                       <p>Deaths:</p>
                                    </div>
                                    <div>
-    <p>{data.deaths}</p>
+                                   <p>
+                            <CountUp
+                              start={0}
+                              end={data.deaths}
+                              duration={3}
+                              separator=","
+                            /></p>
                                    </div>
                               
                                  

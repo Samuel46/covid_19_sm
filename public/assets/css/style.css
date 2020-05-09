@@ -71,6 +71,7 @@
  /*--------------import----external-css-----------------*/
  
  @import url('rtl.css');
+
  @import url('font-awesome.min.css');
  @import url('linearicons.css');
  @import url('animate.css');
@@ -87,6 +88,8 @@
  ====================================================================
  
   ***/
+  
+
  
  * {
 	 margin: 0px;
@@ -100,7 +103,7 @@
 	 position: relative;
 	 padding: 0;
 	 margin: 0;
-	 font-family: 'Nunito', sans-serif;
+	 font-family: 'Nunito', 'cookie-regular', sans-serif;
 	 color: #53627e;
 	 background: #ffffff;
 	 -webkit-font-smoothing: antialiased;
@@ -121,8 +124,30 @@
  ====================================================================
 	 Global Settings
  ====================================================================
+
+ 
+
  
   ***/
+
+  .table-responsive label {
+	  display: none;
+  }
+
+  .dark-2{
+	  background-color: red;
+  }
+
+  div.dataTables_wrapper div.dataTables_info {
+	  display: none;
+  }
+
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+	  display: none;
+  }
+  .overall_deatils .table tbody td:first-child{
+	  display: none;
+  }
  
  body.scroll_bar_style_one::-webkit-scrollbar {
 	 width: 10px;
@@ -690,9 +715,7 @@
  #scroll span:hover {
 	 opacity: 1;
  }
-  body{
-	  margin: 0;
-  }
+ 
  
  /*==================================================================================
  themebtn
@@ -2159,7 +2182,6 @@
  
  .interactive_map.type_one {
 	 position: relative;
-	 
  }
  
  .interactive_map.type_one .heading {
@@ -2179,12 +2201,49 @@
 	 position: absolute;
  }
  
+ .pin_marker_outer.type_one .pin:nth-child(1) {
+	 left: 50%;
+	 top: 37%;
+ }
  
+ .pin_marker_outer.type_one .pin:nth-child(2) {
+	 left: 30%;
+	 bottom: 23%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(3) {
+	 right: 46%;
+	 bottom: 16%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(4) {
+	 right: 38%;
+	 bottom: 49%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(5) {
+	 left: 18%;
+	 top: 33%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(6) {
+	 right: 7%;
+	 bottom: 11%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(7) {
+	 right: 19%;
+	 bottom: 51%;
+ }
+ 
+ .pin_marker_outer.type_one .pin:nth-child(8) {
+	 right: 28%;
+	 bottom: 45%;
+ }
  
  .pin_marker_outer.type_one .pin::before {
 	 position: absolute;
 	 content: '';
-	 z-index: -2;
 	 width: 20px;
 	 height: 20px;
 	 background: #dd2d4e;
@@ -2202,51 +2261,48 @@
 	 -o-transition: all .6s ease-in-out;
 	 transition: all .6s ease-in-out;
  }
-
+ 
  .grid{
 	display: grid;
 	grid-template-columns: 2fr 1fr;
- }	 
-	 
-
- 
+ }
  .pin_marker_outer.type_one .pin .pin_box {
-	position: absolute;
-	top: -163px;
-	left: -90px;
-	right: 0;
-	margin: auto;
-	width: 200px;
-   
-	padding: 20px;
-	border-radius: 10px;
-	-webkit-transform: scaleX(0);
-	-ms-transform: scaleX(0);
-	transform: scaleX(0);
-	background-color: rgba(105, 189, 189, 0.9);
-	margin-top: 0px;
-	opacity: 0;
-	-webkit-transition: all .6s ease-in-out;
-	-moz-transition: all .6s ease-in-out;
-	-ms-transition: all .6s ease-in-out;
-	-o-transition: all .6s ease-in-out;
-	transition: all .6s ease-in-out;
-}
-
-.pin_marker_outer.type_one .pin .pin_box:before {
-	position: absolute;
-	content: '';
-	bottom: -38px;
-	margin: 0 auto;
-	left: 0;
-	width: 20px;
-	right: 0;
-	border-top: 24px solid rgba(105, 189, 189, 0.9);
-	border-bottom: 15px solid transparent;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-}
-
+	 position: absolute;
+	 top: -165px;
+	 left: -90px;
+	 right: 0;
+	 margin: auto;
+	 width: 200px;
+	
+	 padding: 20px;
+	 border-radius: 10px;
+	 -webkit-transform: scaleX(0);
+	 -ms-transform: scaleX(0);
+	 transform: scaleX(0);
+	 background-color: rgba(105, 189, 189, 0.9);
+	 margin-top: 0px;
+	 opacity: 0;
+	 -webkit-transition: all .6s ease-in-out;
+	 -moz-transition: all .6s ease-in-out;
+	 -ms-transition: all .6s ease-in-out;
+	 -o-transition: all .6s ease-in-out;
+	 transition: all .6s ease-in-out;
+ }
+ 
+ .pin_marker_outer.type_one .pin .pin_box:before {
+	 position: absolute;
+	 content: '';
+	 bottom: -38px;
+	 margin: 0 auto;
+	 left: 0;
+	 width: 20px;
+	 right: 0;
+	 border-top: 24px solid rgba(105, 189, 189, 0.9);
+	 border-bottom: 15px solid transparent;
+	 border-left: 15px solid transparent;
+	 border-right: 15px solid transparent;
+ }
+ 
  .pin_marker_outer.type_one .pin:hover .pin_box {
 	 opacity: 1;
 	 z-index: 99;
@@ -2256,19 +2312,41 @@
  }
  
  .pin_marker_outer.type_one .pin .pin_box h2 {
-	padding-bottom: 0x;
-	border-bottom: 2px solid #fff;
-	font-size: 18px;
-	margin-bottom: 0;
-	color: #ffffff;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
+	 padding-bottom: 0x;
+	
+	 border-bottom: 2px solid #fff;
+	 font-size: 18px;
+	 margin-bottom: 0;
+	 color: #ffffff;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+ }
  
  .pin_marker_outer.type_one .pin .pin_box p {
-	 font-size: 13px;
+	 font-size: 12px;
 	 color: #ffffff;
  }
+  
+  /* .imag_box {
+	width:250px;
+	height: 75px;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom:18px;
+
+	
+
+  }
+  .imag_box img {
+	  width: 168px !important;
+	  position: center;
+  } */
+
+ 
+	
+		
+
+
  
  .pin_marker_outer.type_one .pin .pin_box h6 {
 	 font-size: 24px;
@@ -2629,6 +2707,8 @@
  .protect_box.type_two h2:hover a {
 	 color: #dd2d4e;
  }
+
+ 
  
  .protect_box_left .protect_box.type_two {
 	 text-align: right;
@@ -8366,30 +8446,30 @@ color: #274782;
 	 .banner.type_one {
 		 background-position: 20%, 0!important;
 	 }
+	 .interactive_map.type_one {
+		overflow: hidden;
+	}
 	 .symptoms_checker_form.type_one .mg_top.check_box {
 		 width: auto;
 		 margin-right: 20px;
 	 }
-	 .pin_marker_outer.type_one .pin-box {
-		 display: display grid;
-		 margin: 0;
-		 padding:0;
-	 }
+	 .pin_marker_outer.type_one .pin .pin_box h2 {
+		padding-bottom: 0x;
+	   
+		border-bottom: 2px solid #fff;
+		font-size: 12px;
+		margin-bottom: 0;
+		color: #ffffff;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
 
-	 
-
-	 /* img */
-	 .imag_box {
-		display: none;
 	
-		
 	
-	  }
-	  .imag_box img {
-		  display: none;
-		  
-	  }
-	
+	.pin_marker_outer.type_one .pin .pin_box p {
+		font-size: 10px;
+		color: #ffffff;
+	}
 	 .commnent_box.two {
 		 margin-left: 0px;
 	 }

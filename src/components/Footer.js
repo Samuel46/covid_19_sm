@@ -20,7 +20,7 @@ export const Footer = () => {
       </div>
                     {/*  */}
                     <div className="pdt_10 ">
-                    <p>Developed with<span class="linearicons-heart" /> by<small> <a href="https://samuel46.github.io/SamuelPortfolio"  target="_blank">  Samuel Wanjiru</a></small></p>
+                    <p>Developed with<span class="linearicons-heart" /> by<small> <a href="https://gifted-albattani-c93508.netlify.app/"  target="_blank">  Samuel Wanjiru</a></small></p>
 
                     </div>
 
