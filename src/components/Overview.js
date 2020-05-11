@@ -21,7 +21,7 @@ useEffect(()=>{
 
 
 const filterCountries = overview.filter(item =>{
-  return searchCountries !== "" ? item.country.toLowerCase().includes(searchCountries): item;
+  return searchCountries !== "" ? item.country.toLowerCase().includes(searchCountries): item
 })
 
 
@@ -53,8 +53,8 @@ const filterCountries = overview.filter(item =>{
             onChange={e => setSearchCountries(e.target.value)}
             >
               <div className="form_group">
-                <input type="text" placeholder="Type your Country here..." />
-                <button className="search_btn" type="submit">Search...</button>
+                <input type="text" placeholder="Search your Country here..." />
+              
               </div>
             </form>
           </div>
