@@ -54,7 +54,7 @@ export const Help = () => {
                       </div>
                     </div>
                     <div className="col-lg-8">
-                      <div className="form-group mg_top accept check_box">
+                      <div className="form-group">
                        <div data-netlify-recaptcha="true"></div>
                        
                       </div>
