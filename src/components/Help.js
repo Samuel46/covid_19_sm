@@ -4,7 +4,8 @@ export const Help = () => {
     return (
         <div>
             {/*---------appointment-------------*/}
-      <section className="appointment type_one pdt_70  ">
+           {/*---------appointment-------------*/}
+           <section className="appointment type_one pdt_30  ">
         <div className="container">
           <div className="row">
             {/*-------row---------*/}
@@ -12,60 +13,13 @@ export const Help = () => {
               {/*----col-----*/}
               <div className="heading tp_one">
                 <h1>Need Heep? </h1>
-                <p> Fill out the form below to report a covid-19 case and our staff will<br className="md_display_none" /> contact you immediately.</p>
+                <img src="assets/image/twitter-pic.jpg" className="img-fluid" alt="img" />
               </div>
               <div className="appointment_form pdb_90">
-                <form  data-netlify="true">
-                  <div className="row">
-                    <div className="col-lg-6">
-                      <div className="form-group">
-                        <input type="text" name="name" placeholder="Your name" />
-                        <small className="linearicons-user" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group">
-                        <input type="text" name="skype" placeholder="Your Location" />
-                        <small className="fa fa-home" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group">
-                        <input type="text" name="skype" placeholder="Your Country" />
-                        <small className="linearicons-first-aid" />
-                      </div>
-                    </div>
-                    <div className="col-lg-6">
-                      <div className="form-group">
-                        <select name="topic" id="topic">
-                          <option selected="selected">Choose symtopms </option>
-                          <option>Head Ache</option>
-                          <option>Fever</option>
-                          <option>General Checkup </option>
-                          <option>Clitical Codition </option>
-                        </select>
-                        <small className="linearicons-bubbles" />
-                      </div>
-                    </div>
-                    <div className="col-lg-12">
-                      <div className="form-group textarea">
-                        <textarea name="message" placeholder="Additional message..." rows={4} defaultValue={""} />
-                        <small className="linearicons-pencil4" />
-                      </div>
-                    </div>
-                    <div className="col-lg-8">
-                      <div className="form-group">
-                       
-                      
-                      </div>
-                    </div>
-                    <div className="col-lg-4">
-                      <div className="form-group">
-                        <button className="submit_btn" type="submit">Submit</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
+                <p className="covid-19">
+                </p><h2>#stayathome</h2>
+                Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2. The disease was first identified in 2019 in Wuhan, the capital of Hubei, China, and has since spread globally, resulting in the 2019–2020 coronavirus pandemic. Common symptoms include fever, cough, and shortness of breath.
+                <p />
               </div>
               {/*----col-ebd-----*/}
             </div>

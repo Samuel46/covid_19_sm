@@ -5142,6 +5142,7 @@ padding: 0px 10px;
 	 position: absolute;
 	 bottom: 0;
 	 right: 0;
+	 height:100vh;
  }
  
  .appointment.type_one .form-group {
@@ -5153,20 +5154,6 @@ padding: 0px 10px;
 	 margin: 10px 0px 30px;
  }
  
- .appointment.type_one .form-group input,
- .appointment.type_one .form-group textarea,
- .appointment.type_one .form-group .ui-selectmenu-button.ui-button {
-	 position: relative;
-	 width: 100%;
-	 font-size: 14px;
-	 height: 40px;
-	 line-height: 26px;
-	 color: #53627e;
-	 background: #ffffff;
-	 border-radius: 30px;
-	 padding: 10px 20px 10px 45px;
-	 border: 1px solid #d6dceb;
- }
  
  .appointment.type_one .form-group input::placeholder,
  .appointment.type_one .form-group textarea::placeholder {
