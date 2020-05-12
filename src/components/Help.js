@@ -15,7 +15,7 @@ export const Help = () => {
                 <p> Fill out the form below to report a covid-19 case and our staff will<br className="md_display_none" /> contact you immediately.</p>
               </div>
               <div className="appointment_form pdb_90">
-                <form action="POST" data-netlify="true">
+                <form  data-netlify="true">
                   <div className="row">
                     <div className="col-lg-6">
                       <div className="form-group">
