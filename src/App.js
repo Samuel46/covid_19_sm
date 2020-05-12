@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Stat, Maps, Footer, Symtoms, Overview} from './components';
+import {Header, Stat, Maps, Footer, Symtoms, Help} from './components';
 
 import './App.css';
 
@@ -22,8 +22,8 @@ return (
       <Header/>
       <Stat data= {data}/>
       <Maps/>
-      <Overview/>
       <Symtoms/>
+      <Help/>
       <Footer/>
     </div>
   );
