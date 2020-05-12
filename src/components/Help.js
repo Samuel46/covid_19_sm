@@ -56,7 +56,7 @@ export const Help = () => {
                     <div className="col-lg-8">
                       <div className="form-group">
                        
-                      <div data-netlify-recaptcha="true" />
+                      
                       </div>
                     </div>
                     <div className="col-lg-4">
